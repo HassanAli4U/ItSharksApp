@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "560350847785",
+    "firebase_url": "https://itsharks-568dd.firebaseio.com",
+    "project_id": "itsharks-568dd",
+    "storage_bucket": "itsharks-568dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560350847785:android:6d1e10412ca773e2",
+        "android_client_info": {
+          "package_name": "com.iloveallah.itsharks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560350847785-vhodp5t8jk615s2ru5nkju1kk5fs69dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVSCznTt0uwVrLlF1ykLJBBkw7cBzCFZg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

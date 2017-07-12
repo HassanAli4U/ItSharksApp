@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iloveallah.itsharks">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="It Sharks"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CoursesActivity"
+            android:label="Courses"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ui.InstructorsActivity"
+            android:label="Instructors"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ui.ContactActivity"
+            android:label="Contact"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ui.CourseInfoAndContentActivity"
+            android:label="Course Data"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ui.ReviewTabsActivity"
+            android:label="Reviews"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <receiver android:name=".widget.Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <provider
+            android:name=".contentProvider.ContentProvider"
+            android:authorities="com.iloveallah.itsharks"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>

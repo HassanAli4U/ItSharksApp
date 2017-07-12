@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">It Sharks 2</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="phone1">01017743315</string>
+    <string name="phone2">01140325255</string>
+    <string name="phone3">01200302842</string>
+    <string name="add_review">Add</string>
+    <string name="face">ItSharks facbook page</string>
+    <string name="google">ItSharks google mail</string>
+<string name="logo">itSharks logo</string>
+    <string name="course_image">course image</string>
+    <string name="instructor_image">instructor image</string>
+
+    <string name="toast_misses_item">your name or course name or review is missed</string>
+    <string name="toast_newtwork_connection">Please check network connectivity</string>
+<string name="contact1">contact with 01017743315</string>
+    <string name="contact2">contact with 01140325255</string>
+    <string name="contact3">contact with 01200302842</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="Yourname">Your name</string>
+    <string name="Coursename">Course name</string>
+    <string name="YourReview">Your review</string>
+    <string name="content">content</string>
+    <string name="address_value">28 Military Engineers Tower, Next to Sadat Academy and Smart Computer mall, Maadi, Cairo, Egypt.</string>
+<string name="courseHours">course hours</string>
+    <string name="error">error</string>
+    <string name="courseWeeks">course weeks</string>
+    <string name="addedReview">your review added</string>
+    <string name="sessionsPerWeek">sessions per week</string>
+    <string name="menuCoursesItem">Courses</string>
+    <string name="menuInstructorsItem">Instructors</string>
+    <string name="menuReviesItem">Reviews</string>
+    <string name="menuLocationItem">Location</string>
+    <string name="menuContactsItem">Contacts</string>
+    <string name="Name">Name</string>
+    <string name="course">Course</string>
+    <string name="review">Review</string>
+    <string name="line">_______________</string>
+
+
+
+
+</resources>

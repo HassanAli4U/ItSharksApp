@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/menuCoursesItem"
+        android:id="@+id/courses" />
+    <item
+        android:title="@string/menuInstructorsItem"
+        android:id="@+id/instruct" />
+    <item
+        android:title="@string/menuReviesItem"
+        android:id="@+id/reviews" />
+    <item
+        android:title="@string/menuLocationItem"
+        android:id="@+id/location" />
+    <item
+        android:title="@string/menuContactsItem"
+        android:id="@+id/contact" />
+</menu>

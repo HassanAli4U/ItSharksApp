@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semi_orange"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:background="@drawable/itsharks"
+            android:contentDescription="@string/logo"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:text="@string/phone1"
+                android:layout_marginBottom="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:id="@+id/phone"
+                android:contentDescription=""
+                android:background="@drawable/telephone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:textColor="@color/white"
+                android:text="@string/phone2"
+                android:textSize="25sp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="3"
+                android:id="@+id/mobile2" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:id="@+id/phone2"
+                android:background="@drawable/telephone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mobile3"
+                android:layout_width="0dp"
+
+                android:layout_height="50sp"
+                android:text="@string/phone3"
+                android:layout_marginBottom="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:id="@+id/phone3"
+                android:background="@drawable/telephone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:id="@+id/face"
+                android:layout_marginRight="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100sp"
+                android:contentDescription="@string/face"
+                android:background="@drawable/face" />
+
+            <ImageButton
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:id="@+id/google"
+                android:contentDescription="@string/google"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/google" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
