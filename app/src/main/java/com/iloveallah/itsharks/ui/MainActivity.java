@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.iloveallah.itsharks.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        must call before any other usage of FirebaseDatabase instanc
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 
         image = (ImageView) findViewById(R.id.logo);
         image.setImageResource(R.drawable.it);

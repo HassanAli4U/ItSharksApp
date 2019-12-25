@@ -27,7 +27,6 @@ public class InfoFragment extends Fragment {
         sessionsPerWeek = (TextView) view.findViewById(R.id.sessions);
         final CourseVariables variables = (CourseVariables) getArguments().getSerializable("my object");
 
-
         name.setText(variables.name);
         hour.setText("" + variables.hours);
         weeks.setText("" + variables.weeks);

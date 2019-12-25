@@ -46,7 +46,7 @@ public class Database extends SQLiteOpenHelper {
         //all inserted data need to be inserted only one time  when the app is installed
         //if there is any data will be inserted or deleted ,it will be in a new version
         ContentValues values = new ContentValues();
-        values.put(COURSE_NAME, "Android");
+        values.put(COURSE_NAME, "Android Develpment Diploma");
         values.put(COURSE_IMAGE, R.drawable.android);
         values.put(COURSE_PRICE, 1400);
         values.put(COURSE_WEEKS, 8);
@@ -184,7 +184,7 @@ public class Database extends SQLiteOpenHelper {
 
 
         ContentValues values2 = new ContentValues();
-        values2.put(COURSE_NAME, "C#");
+        values2.put(COURSE_NAME, "C# Programming Fundamentals");
         values2.put(COURSE_IMAGE, R.drawable.cs);
         values2.put(COURSE_PRICE, 800);
         values2.put(COURSE_WEEKS, 4);
@@ -290,7 +290,7 @@ public class Database extends SQLiteOpenHelper {
 
 
         ContentValues values1 = new ContentValues();
-        values1.put(COURSE_NAME, "Java");
+        values1.put(COURSE_NAME, "Java SE Programming Fundamentals");
         values1.put(COURSE_IMAGE, R.drawable.javaimage);
         values1.put(COURSE_PRICE, 1500);
         values1.put(COURSE_WEEKS, 9);
@@ -421,8 +421,8 @@ public class Database extends SQLiteOpenHelper {
         sqLiteDatabase.insert(Database.TABLE_NAME, null, values1);
         /////////
         ContentValues values3 = new ContentValues();
-        values3.put(COURSE_NAME, "php");
-        values3.put(COURSE_IMAGE, R.drawable.php);
+        values3.put(COURSE_NAME, "Web design and development");
+        values3.put(COURSE_IMAGE, R.drawable.webdesign);
         values3.put(COURSE_PRICE, 1400);
         values3.put(COURSE_WEEKS, 9);
         values3.put(COURSE_SESSIONS, 3);

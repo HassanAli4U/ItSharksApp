@@ -87,7 +87,7 @@ public class InstructorsActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.courses: {
-                Intent i = new Intent(getApplicationContext(), InstructorsActivity.class);
+                Intent i = new Intent(getApplicationContext(), CoursesActivity.class);
                 startActivity(i);
                 return true;
             }

@@ -2,9 +2,11 @@ package com.iloveallah.itsharks.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +31,14 @@ public class CourseInfoAndContentFragment extends Fragment {
         final CourseVariables variables = (CourseVariables) getArguments().getSerializable("my object");
 
 
-        image = (ImageView) mainView.findViewById(R.id.course_imaage);
+
+        // Set Collapsing Toolbar layout to the screen
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) mainView.findViewById(R.id.collapsing_toolbar);
+
+        collapsingToolbar.setTitle(variables.name);
+
+        image = (ImageView) mainView.findViewById(R.id.image);
         Picasso.with(getActivity()).load(variables.imageID).into(image);
 
 

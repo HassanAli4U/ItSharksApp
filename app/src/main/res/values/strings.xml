@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">It Sharks 2</string>
+    <string name="app_name">It Sharks</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="phone1">01017743315</string>
     <string name="phone2">01140325255</string>
     <string name="phone3">01200302842</string>
+    <string name="mail">info@itsharks.co</string>
+    <string name="location">Address</string>
+    <string name="youTubeLink">https://www.youtube.com/channel/UCd4x-LGET6qIqqI4cKj9thg</string>
+
     <string name="add_review">Add</string>
     <string name="face">ItSharks facbook page</string>
     <string name="google">ItSharks google mail</string>

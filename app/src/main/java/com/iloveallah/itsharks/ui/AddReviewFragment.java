@@ -3,6 +3,7 @@ package com.iloveallah.itsharks.ui;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,21 +17,21 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.iloveallah.itsharks.NetworkConnection;
 import com.iloveallah.itsharks.R;
 
+import ru.dimorinny.floatingtextbutton.FloatingTextButton;
+
 
 public class AddReviewFragment extends Fragment {
    private EditText yourName, course_name, yourReview;
     private FloatingActionButton add;
-
 
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mReviewDatabaseReference;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.add_review_fragment, null);
 
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mReviewDatabaseReference = mFirebaseDatabase.getReference().child("Reviews").push();
 
@@ -39,7 +40,6 @@ public class AddReviewFragment extends Fragment {
         course_name = (EditText) view.findViewById(R.id.course_name);
         yourReview = (EditText) view.findViewById(R.id.your_review);
         add = (FloatingActionButton) view.findViewById(R.id.add);
-
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,9 +48,16 @@ public class AddReviewFragment extends Fragment {
                 final String course = course_name.getText().toString();
                 final String review = yourReview.getText().toString();
 
-                if (name == null || course == null || review == null) {
-                    Toast.makeText(getActivity(), R.string.toast_misses_item, Toast.LENGTH_SHORT).show();
-                } else {
+                if (name.equals("") || name.equals("Your name")) {
+                    yourName.setError("Enter your name");
+                }
+                if (course.equals("") || course.equals("Course name")) {
+                    course_name.setError("Enter course name");
+                }
+                if (review.equals("") || review.equals("Your review")) {
+                    yourReview.setError("Enter your review");
+                }
+                else {
                     NetworkConnection connection = new NetworkConnection();
 
                     if (!connection.isOnline()) {
